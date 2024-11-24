@@ -1,0 +1,35 @@
+:root {
+    --main-color: #ffffff;
+    --secondary-color: #91381f;
+    --main-text-color: #b84c26;
+    --secondary-text-color: rgb(20, 20, 20);
+
+    --transition-duration-short: 0.2s;
+    --transition-duration-medium: 1s;
+    --transition-duration-long: 3s;
+
+    user-select: none;
+}
+
+body {
+    font-family: 'Times New Roman';
+    color: var(--main-text-color);
+
+    width: 1280px;
+    padding: 0px;
+    margin: 25px auto 0px auto;
+
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px lightgray;
+}
+
+a {
+    color: var(--main-text-color);
+    text-decoration: none;
+}
+
+@media (max-width: 1280px) {
+    body {
+        width: 100%;
+    }
+}

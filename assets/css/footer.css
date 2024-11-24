@@ -1,0 +1,16 @@
+footer .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    padding: 10px 0px 10px 0px;
+}
+
+footer .wrapper :is(a, p) {
+    margin: 0px;
+    padding: 0px;
+
+    font-size: 18px;
+    color: var(--main-text-color);
+}

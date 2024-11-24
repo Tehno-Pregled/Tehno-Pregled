@@ -1,0 +1,62 @@
+#hero-image {
+    position: relative;
+}
+
+#hero-image img {
+    width: 100%;
+    height: auto;
+}
+
+#hero-image .text {
+    position: absolute;
+    right: 250px;
+    bottom: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-transform: uppercase;
+}
+
+#hero-image .text h2 {
+    font-weight: normal;
+    font-size: 38px;
+    text-align: center;
+    color: var(--main-color);
+}
+
+#hero-image .text .contact-us {
+    position: relative;
+    z-index: 1;
+
+    font-size: 24px;
+    color: var(--main-color);
+    width: auto;
+
+    padding: 7px 15px 7px 15px;
+    letter-spacing: 2px;
+}
+
+#hero-image .text .contact-us::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background-color: var(--main-text-color);
+    outline: 1px solid var(--main-color);
+    opacity: 0.8;
+}
+
+#hero-image .text .more-info {
+    margin-top: 15px;
+    color: var(--main-color);
+    font-size: 16px;
+    letter-spacing: 4px;
+    text-decoration: underline;
+    text-transform: lowercase;
+}
