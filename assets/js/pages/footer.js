@@ -9,7 +9,7 @@ export async function initFooter() {
     
     const content = await tools.loadPagePart("footer");
     try {
-        footerElement.appendChild(content);
+        tools.appendChildren(footerElement, content);
     } catch(e) {
         console.error("Footer element not found in page.");
         throw new Error(e);

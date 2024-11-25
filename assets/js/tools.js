@@ -30,5 +30,11 @@ export async function loadPagePart(pagePart) {
     }
     const html = await response.text();
 	const parser = new DOMParser();
-	return parser.parseFromString(html, "text/html").querySelector("body").children[0]; 
+	return parser.parseFromString(html, "text/html").querySelector("body").children;
+}
+
+export function appendChildren(element, children) {
+	while (children.length > 0) {
+		element.appendChild(children[0]);
+	}
 }
