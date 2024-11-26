@@ -22,21 +22,22 @@
 
 #hero-image .text h2 {
     font-weight: normal;
-    font-size: 38px;
+    font-size: 2.5em;
     text-align: center;
     color: var(--main-color);
+    text-shadow: 0px 0px 4px black;
 }
 
 #hero-image .text .contact-us {
     position: relative;
     z-index: 1;
 
-    font-size: 24px;
-    color: var(--main-color);
-    width: auto;
-
-    padding: 7px 15px 7px 15px;
+    font-size: 1.5em;
     letter-spacing: 2px;
+    color: var(--main-color);
+
+    width: auto;
+    padding: 7px 15px 7px 15px;
 }
 
 #hero-image .text .contact-us::before {
@@ -55,8 +56,112 @@
 #hero-image .text .more-info {
     margin-top: 15px;
     color: var(--main-color);
-    font-size: 16px;
+    font-size: 1em;
     letter-spacing: 4px;
     text-decoration: underline;
     text-transform: lowercase;
+}
+
+@media (max-width: 1280px) {
+
+    #hero-image .text {
+        right: 100px;
+        bottom: 50px;
+    }
+    
+    #hero-image .text h2 {
+        font-size: 2em;
+    }
+
+    #hero-image .text .contact-us {
+        font-size: 1.2em;
+    }
+
+    #hero-image .text .more-info {
+        font-size: 0.9em;
+    }
+}
+
+@media (width < 1024px) {
+    #hero-image .text {
+        right: 50px;
+        bottom: 40px;
+    }
+
+    #hero-image .text h2 {
+        font-size: 1.8em;
+    }
+
+    #hero-image .text .contact-us {
+        font-size: 1em;
+    }
+
+    #hero-image .text .more-info {
+        font-size: 0.9em;
+    }
+}
+
+@media (width < 768px) {
+    #hero-image .text {
+        right: 25px;
+        bottom: 25px;
+    }
+
+    #hero-image .text h2 {
+        font-size: 1.4em;
+    }
+
+    #hero-image .text .contact-us {
+        font-size: 0.8em;
+    }
+
+    #hero-image .text .more-info {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 425px) {
+    #hero-image .text {
+        position: absolute;
+        right: auto;
+        gap: 10px;
+        bottom: 40px;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #hero-image .text h2 {
+        font-size: 1.7em;
+        word-spacing: 4px;
+        letter-spacing: 1px;
+    }
+
+    #hero-image .text .contact-us {
+        font-size: 0.8em;
+    }
+
+    #hero-image .text .more-info {
+        font-size: 0.8em;
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 375px) {
+    #hero-image .text {
+        bottom: 30px;
+    }
+
+    #hero-image .text h2 {
+        font-size: 1.4em;
+        word-spacing: 3px;
+        letter-spacing: 1px;
+    }
+}
+
+@media (max-width: 320px) {
+    #hero-image .text h2 {
+        font-size: 1.3em;
+        word-spacing: 3px;
+        letter-spacing: 1px;
+    }
 }
