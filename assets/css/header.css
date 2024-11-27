@@ -180,8 +180,8 @@ header .hamburger-menu .close {
     }
 }
 
-@media (min-width: 1280px) {
-    header .hamburger {
+@media (width > 1280px) {
+    header .wrapper .hamburger {
         display: none;
     }
 
@@ -211,6 +211,10 @@ header .hamburger-menu .close {
 }
 
 @media (max-width: 425px) {
+    header {
+        height: 90px;
+    }
+
     header .wrapper {
         justify-content: space-evenly;
         padding-right: 0px;
@@ -263,11 +267,15 @@ header .hamburger-menu .close {
 
 @media (max-width: 375px) {
     header .wrapper .logo img {
-        height: 60%;
+        height: 70%;
     }
 }
 
 @media (max-width: 320px) {
+    header {
+        height: 80px;
+    }
+
     header .wrapper {
         padding-right: 5px;
     }

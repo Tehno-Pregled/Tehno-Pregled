@@ -17,10 +17,11 @@ body {
 
     width: 1280px;
     padding: 0px;
-    margin: 25px auto 0px auto;
+    margin: 25px auto 25px auto;
 
     border-radius: 10px;
     box-shadow: 3px 3px 10px lightgray;
+    background-color: var(--main-color);
 }
 
 a {

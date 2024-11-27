@@ -1,0 +1,119 @@
+.heading {
+    width: 100%;
+
+    margin: 20px 0px 50px 0px;
+}
+
+.heading * {
+    text-align: center;
+    text-transform: capitalize;
+
+    font-weight: normal;
+    font-size: 1.8em;
+}
+
+#services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 120px;
+
+    margin-bottom: 50px;
+}
+
+#services article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+
+    box-sizing: border-box;
+    padding: 0px 50px 0px 50px;
+}
+
+#services article>* {
+    box-shadow: 2px 2px 5px lightgray;
+}
+
+#services article .image {
+    position: relative;
+    width: 384px;
+    height: 384px;
+    border-radius: 4px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--main-text-color);
+}
+
+#services article .image img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+}
+
+#services article .text {
+    position: relative;
+
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--main-text-color);
+    border-radius: 4px;
+    background-color: var(--main-color);
+    padding-bottom: 10px;
+}
+
+#services article .text h2 {
+    width: 100%;
+    margin: 0px;
+    padding: 5px 15px 5px 15px;
+    box-sizing: border-box;
+
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: normal;
+
+    color: var(--main-color);
+    background-color: var(--main-text-color);
+}
+
+#services article .text ul {
+    margin: 0px;
+    padding: 0px;
+
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    line-height: 1.4em;
+    text-wrap: stable;
+
+    color: var(--secondary-color);
+    list-style-type: none;
+}
+
+#services article .text ul {
+    list-style-type: none;
+}
+
+#services article .text ul li:nth-child(even)::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    background-color: var(--main-text-color);
+    opacity: 0.2;
+}
+
+#services article .text ul li:nth-child(even) {
+    color: var(--main-text-color);
+}
+
+#services article .text ul li {
+    z-index: 1;
+    position: relative;
+    padding: 8px 20px 8px 15px;
+    text-align: center;
+}

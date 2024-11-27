@@ -7,10 +7,23 @@ footer .wrapper {
     padding: 10px 0px 10px 0px;
 }
 
-footer .wrapper :is(a, p) {
+footer .wrapper * {
     margin: 0px;
     padding: 0px;
 
-    font-size: 18px;
+    font-size: 1em;
     color: var(--main-text-color);
+}
+
+@media (width < 768px) {
+    footer .wrapper * {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 425px) {
+    footer .wrapper {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
 }
