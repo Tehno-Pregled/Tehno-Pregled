@@ -9,8 +9,11 @@
 
 #hero-image .text {
     position: absolute;
-    right: 250px;
-    bottom: 50px;
+    top: 120px;
+    right: 20px;
+
+    width: 50%;
+    padding: 0px 20px 0px 20px;
 
     display: flex;
     flex-direction: column;
@@ -22,10 +25,11 @@
 
 #hero-image .text h2 {
     font-weight: normal;
-    font-size: 2.5em;
+    font-size: 2.2em;
     text-align: center;
+    text-wrap: balance;
     color: var(--main-color);
-    text-shadow: 0px 0px 4px black;
+    text-shadow: 0px 0px 6px black;
 }
 
 #hero-image .text .contact-us {
@@ -50,7 +54,7 @@
     top: 0px;
     background-color: var(--main-text-color);
     outline: 1px solid var(--main-color);
-    opacity: 0.8;
+    opacity: 0.95;
 }
 
 #hero-image .text .more-info {
@@ -60,13 +64,10 @@
     letter-spacing: 4px;
     text-decoration: underline;
     text-transform: lowercase;
+    text-shadow: 0px 0px 4px black;
 }
 
 @media (max-width: 1280px) {
-    #hero-image .text {
-        right: 100px;
-        bottom: 50px;
-    }
     
     #hero-image .text h2 {
         font-size: 2em;
@@ -81,12 +82,7 @@
     }
 }
 
-@media (width < 1024px) {
-    #hero-image .text {
-        right: 50px;
-        bottom: 40px;
-    }
-
+@media (max-width: 1024px) {
     #hero-image .text h2 {
         font-size: 1.8em;
     }
@@ -100,14 +96,33 @@
     }
 }
 
-@media (width < 768px) {
+@media (max-width: 896px) {
     #hero-image .text {
-        right: 25px;
-        bottom: 25px;
+        right: 10px;
+        top: 80px;
     }
 
     #hero-image .text h2 {
-        font-size: 1.4em;
+        font-size: 1.6em;
+    }
+
+    #hero-image .text .contact-us {
+        font-size: 1em;
+    }
+
+    #hero-image .text .more-info {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 768px) {
+    #hero-image .text {
+        right: 5px;
+        top: 80px;
+    }
+
+    #hero-image .text h2 {
+        font-size: 1.3em;
     }
 
     #hero-image .text .contact-us {
@@ -119,14 +134,36 @@
     }
 }
 
+@media (max-width: 640px) {
+    #hero-image .text {
+        right: 0px;
+        top: 60px;
+    }
+
+    #hero-image .text h2 {
+        font-size: 0.9em;
+    }
+
+    #hero-image .text .contact-us {
+        font-size: 0.7em;
+    }
+
+    #hero-image .text .more-info {
+        font-size: 0.7em;
+    }
+}
+
 @media (max-width: 425px) {
     #hero-image .text {
         position: absolute;
         right: auto;
         gap: 10px;
+        top: auto;
         bottom: 40px;
         width: 100%;
         flex-direction: column;
+
+        box-sizing: border-box;
     }
 
     #hero-image .text h2 {
